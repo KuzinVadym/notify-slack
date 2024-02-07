@@ -1,6 +1,12 @@
 name: "Hello"
 description: "Send messages to Slack Channel from github action"
 
+inputs:
+  name:
+    description: 'User name'
+    required: true
+    default: 'World'
+
 runs:
   using: "node20"
   main: "dist/index.js"
