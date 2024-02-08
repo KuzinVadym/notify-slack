@@ -2,10 +2,12 @@ name: "Hello"
 description: "Send messages to Slack Channel from github action"
 
 inputs:
-  name:
-    description: 'User name'
+  slackSignInSecret: 
+    description: 'Slack Signing Secret from App Credentials (Slack Basic Information)'
     required: true
-    default: 'World'
+  slackBotToken: 
+    description: 'Slack Bot User OAuth Token (Slack OAuth & Permissions)'
+    required: true
 
 runs:
   using: "node20"
